@@ -184,6 +184,11 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 20rem;
 }
 
+.process .process_img {
+    transform: rotate(45deg);
+    margin-right: 1rem;
+}
+
 .process_title {
     display: flex;
     align-items: start;
@@ -192,10 +197,12 @@ h1, h2, h3, h4, h5, h6 {
 .process_img {
     width: 9rem;
     height: 45px;
+    margin-right: 2rem;
 }
 
 .process_header {
     font-weight: 700;
+    padding-top: 1rem;
     font-size: 48px;
     line-height: 140%;
     margin-bottom: 49px;
@@ -241,4 +248,114 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 160%;
     opacity: 0.5;
     margin-right: 18px;
+}
+
+.command {
+    padding-bottom: 12rem;
+}
+
+.command_title {
+    margin-bottom: 11.9rem;
+}
+
+.command_header {
+    margin-bottom: 0;
+}
+
+.command_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 114px;
+    padding-right: 114px;
+}
+
+.command_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.command_img {
+    width: 19rem;
+    height: 19rem;
+    margin-bottom: 4rem;
+    border-radius: 50%;
+}
+
+.command_name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+.command_proff {
+    margin-bottom: 3rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.command_link {
+    font-size: 16px;
+    line-height: 150%;
+    border: .1rem solid white;
+}
+
+.assembly {
+    padding-top: 20px;
+    padding-bottom: 180px;
+}
+
+.assembly_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.assembly_header {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+.assembly_description {
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 45px;
+    opacity: 0.5;
+}
+
+.assembly_button {
+    background: linear-gradient(141deg, #df5950 0%, #451046 100%);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 51px;
+}
+
+.assembly_social {
+    display: flex;
+}
+
+.assembly_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+.assembly_item img {
+    width: 50%;
+    height: 50%;
+}
+
+.assembly_item:not(:last-child) {
+    margin-right: 3rem;
 }

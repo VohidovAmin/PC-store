@@ -359,3 +359,86 @@ h1, h2, h3, h4, h5, h6 {
 .assembly_item:not(:last-child) {
     margin-right: 3rem;
 }
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10;
+    padding: 3rem 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.modal_close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.modal_inner {
+    position: relative;
+    width: 663px;
+    padding: 90px 10px;
+    background: #2c2c2c;
+    text-align: center;
+}
+
+.modal_header {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    margin-bottom: 10px;
+}
+
+.modal_subheader {
+    font-size: 16px;
+    line-height: 160%;
+    opacity: 0.5;
+    margin-bottom: 28px;
+}
+
+.modal_elements {
+    width: 454px;
+    margin: 0 auto 32px auto;
+}
+
+.modal_item {
+    height: 44px;
+    margin-bottom: 32px;
+}
+
+.modal_input {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 160%;
+    opacity: 0.8;
+}
+
+.modal_input::placeholder {
+    color: white;
+    padding: 11px 30px;
+}
+
+.modal_item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+    padding-right: 1px;
+}

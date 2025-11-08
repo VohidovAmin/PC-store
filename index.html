@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
     <title>Сбор-ПК</title>
 </head>
 
@@ -23,7 +24,7 @@
                 <a href="#">Процесс работы</a>
                 <a href="#">Команда</a>
             </nav>
-            <button type="button" class="button header_button">Оставить заявку</button>
+            <button type="button" class="button header_button modal_button">Оставить заявку</button>
         </div>
     </header>
 
@@ -49,7 +50,7 @@
                         <div class="timer_text">Секунд</div>
                     </div>
                 </div>
-                <button class="button main-display_button">Оставить заявку</button>
+                <button class="button main-display_button modal_button">Оставить заявку</button>
             </div>
             <div class="main-display_background">
                 <img src="img/main-screen__bgc.jpg" alt="main-screen__bgc">
@@ -153,7 +154,7 @@
                 <div class="assembly_wrap">
                     <h2 class="assembly_header">Закажите свою уникальную сборку</h2>
                     <p class="assembly_description">Мы свяжемся с вами, чтобы уточнить детали заказа</p>
-                    <button class="button assembly_button">Оставить заявку</button>
+                    <button class="button assembly_button modal_button">Оставить заявку</button>
                     <div class="assembly_social">
                         <div class="assembly_item">
                             <img src="img/vk.svg" alt="vk">
@@ -171,10 +172,30 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="footer">
 
-    </footer>
+        <form action="#" class="modal">
+            <div class="modal_inner">
+                <div class="modal_close">
+                    <img src="img/cross.svg" alt="cross">
+                </div>
+                <h3 class="modal_header">Заявка на сборку ПК</h3>
+                <p class="modal_subheader">Мы свяжемся с вами, чтобы обсудить детали заказа</p>
+                <div class="modal_elements">
+                    <div class="modal_item">
+                        <input type="text" class="modal_input" placeholder="Как вас зовут">
+                    </div>
+                    <div class="modal_item">
+                        <input type="tel" class="modal_input" placeholder="Номер телефона">
+                    </div>
+                    <div class="modal_item">
+                        <input type="email" class="modal_input" placeholder="E-mail">
+                    </div>
+                </div>
+                <button class="button main-display_button">Отправить</button>
+            </div>
+        </form>
+    </main>
 </body>
 
 </html>
+

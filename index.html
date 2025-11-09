@@ -3,72 +3,104 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
     <title>Сбор-ПК</title>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
     <header class="header">
-        <div class="header_wrap">
-            <a href="#" class="header_logo">
-                <img src="img/logo.svg" alt="logo">
+        <div class="header__wrap">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="">
             </a>
-            <nav class="header_nav">
-                <a href="#">Чем занимаемся</a>
-                <a href="#">Процесс работы</a>
-                <a href="#">Команда</a>
-            </nav>
-            <button type="button" class="button header_button modal_button">Оставить заявку</button>
+            <div class="header__menu">
+                <nav class="header__nav block-center-horis">
+                    <a href="#">Чем занимаемся</a>
+                    <a href="#">Процесс работы</a>
+                    <a href="#">Команда</a>
+                </nav>
+                <button class="button header__button">Зайти в кабинет</button>
+            </div>
         </div>
     </header>
 
-    <main class="main">
+    <main>
         <section class="main-display">
             <div class="container">
-                <h1 class="main-display_header">Собираем игровой ПК под ваш бюджет</h1>
-                <div class="timer main-display_timer">
-                    <div class="timer_item">
-                        <div class="timer_count">18</div>
-                        <div class="timer_text">Дней</div>
+                <h1 class="main-display__header">Собираем игровой ПК под ваш бюджет</h1>
+                <div class="timer main-display__timer">
+                    <div class="timer__item block-center">
+                        <div class="timer__count timer__days">18</div>
+                        <div class="timer__text">Дней</div>
                     </div>
-                    <div class="timer_item">
-                        <div class="timer_count">5</div>
-                        <div class="timer_text">Часов</div>
+                    <div class="timer__item block-center">
+                        <div class="timer__count timer__hours">4</div>
+                        <div class="timer__text">Часов</div>
                     </div>
-                    <div class="timer_item">
-                        <div class="timer_count">23</div>
-                        <div class="timer_text">Минут</div>
+                    <div class="timer__item block-center">
+                        <div class="timer__count timer__minutes">45</div>
+                        <div class="timer__text">Минут</div>
                     </div>
-                    <div class="timer_item">
-                        <div class="timer_count">46</div>
-                        <div class="timer_text">Секунд</div>
+                    <div class="timer__item block-center">
+                        <div class="timer__count timer__seconds">10</div>
+                        <div class="timer__text">Секунд</div>
                     </div>
                 </div>
-                <button class="button main-display_button modal_button">Оставить заявку</button>
             </div>
-            <div class="main-display_background">
-                <img src="img/main-screen__bgc.jpg" alt="main-screen__bgc">
+            <div class="main-display__background">
+                <img src="img/main-screen__bgc.jpg" alt="">
             </div>
         </section>
 
+        <div class="course">
+            <div class="container">
+                <div class="course__wrap">
+                    <div class="course-button__wrap">
+                        <button class="button course__button">Заказать курс</button>
+                    </div>
+                    <div class="course__counter">
+                        <div class="course__counter-line">
+                            <span>Учеников всего:</span>
+                            <span class="course__number">200</span>
+                        </div>
+                        <div class="course__counter-line">
+                            <span>Успешно закончили курс:</span>
+                            <span class="course__number">190</span>
+                        </div>
+                    </div>
+                    <div class="course__progress">
+                        <div class="course__progress-label">
+                            <span>Заработано учениками:</span>
+                            <span class="course__number">400 000₽</span>
+                        </div>
+                        <div class="course__progress-element">
+                            <progress min="0" max="1000000" value="400000" />
+                        </div>
+                        <div class="course__progress-minmax">
+                            <span>0₽</span>
+                            <span>1 000 000₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="work">
             <div class="container">
-                <div class="work_wrap">
-                    <div class="work_img">
-                        <img src="img/about__img.png" alt="comp">
+                <div class="work__wrap">
+                    <div class="work__img">
+                        <img src="img/work__img.png" alt="">
                     </div>
-                    <div class="work_text">
-                        <h2 class="work_header">Чем мы занимаемся</h2>
-                        <p class="work_description">Помогаем сэкономить до 40% стоимости игрового компьютера без потери
-                            производительности. Подбираем мощные детали компьютера, заказываем у своих поставщиков или
-                            напрямую у производителей, чтобы сэкономить ваши деньги. Собираем мощный компьютер, на
-                            котором можно играть в любые современные игры и заниматься работой.</p>
+                    <div class="work__text">
+                        <h2 class="work__header">Чем мы занимаемся</h2>
+                        <div class="work__description">Помогаем сэкономить до 40% стоимости игрового компьютера без
+                            потери производительности. Подбираем мощные детали компьютера, заказываем у своих
+                            поставщиков или напрямую у производителей, чтобы сэкономить ваши деньги. Собираем мощный
+                            компьютер, на котором можно играть в любые современные игры и заниматься работой.</div>
                     </div>
                 </div>
             </div>
@@ -76,36 +108,96 @@
 
         <section class="process">
             <div class="container">
-                <div class="process_wrap">
-                    <div class="process_title">
-                        <div class="process_img">
-                            <img src="img/command1.svg" alt="icon-heading">
+                <div class="process__wrap">
+                    <div class="process__title block-center-horis">
+                        <div class="process__img">
+                            <img src="img/process-img.svg" alt="">
                         </div>
-                        <h2 class="process_header">Процесс работы</h2>
+                        <h2 class="process__header">Процесс работы</h2>
                     </div>
-                    <div class="process_description">Подробно рассказываем о том, как происходит сборка, от заявки до
-                        выдачи вашего заказа
+                    <div class="process__description">Подробно рассказываем о том, как происходит сборка, от заявки до
+                        выдачи вашего заказа</div>
+                    <div class="process__columns">
+                        <div class="process__item">
+                            <div class="process__work">Заявка</div>
+                            <div class="process__text">Мы получаем вашу заявку, связываемся с вами для уточнения
+                                деталей, чтобы понять ваши ожидания от будущего компьютера.</div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__work">Подбор</div>
+                            <div class="process__text">После оплаты подбираем комплектующие, которые дадут максимальную
+                                производительность. Заказываем их напрямую у поставщиков.</div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__work">Сборка</div>
+                            <div class="process__text">Собираем компьютер, проводим стартовую диагностику, устанавливаем
+                                операционную систему и необходимые драйверы для работы.</div>
+                        </div>
+                        <div class="process__item">
+                            <div class="process__work">Выдача</div>
+                            <div class="process__text">Отдаём компьютер вам в назначенный срок, проводим вместе
+                                тестирование, подписываем документы о выполнении работы и гарантии.</div>
+                        </div>
                     </div>
-                    <div class="process_columns">
-                        <div class="process_item">
-                            <h3 class="process_work">Заявка</h3>
-                            <p class="process_text">Мы получаем вашу заявку, связываемся с вами для уточнения деталей,
-                                чтобы понять ваши ожидания от будущего компьютера.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="program">
+            <div class="container">
+                <div class="program__image">
+                    <img src="./img/program.svg" alt="">
+                </div>
+                <h2 class="program__header">Программа обучения</h2>
+                <p class="program__description">Больше 90% учеников прошли полный курс и смогли собрать свой первый
+                    компьютер</p>
+                <div class="program__content">
+                    <div class="program-line">
+                        <div class="program-line__content">
+                            <h3 class="program-line__title">Неделя №1</h3>
+                            <p class="program-line__descr active">
+                                Красивая часть курса,
+                                которая помогает в успехе
+                            </p>
                         </div>
-                        <div class="process_item">
-                            <h3 class="process_work">Подбор</h3>
-                            <p class="process_text">После оплаты подбираем комплектующие, которые дадут максимальную
-                                производительность. Заказываем их напрямую у поставщиков.</p>
+                        <div class="program-line__content">
+                            <h3 class="program-line__title">Неделя №2</h3>
+                            <p class="program-line__descr">
+                                Красивая часть курса,
+                                которая помогает в успехе
+                            </p>
                         </div>
-                        <div class="process_item">
-                            <h3 class="process_work">Сборка</h3>
-                            <p class="process_text">Собираем компьютер, проводим стартовую диагностику, устанавливаем
-                                операционную систему и необходимые драйверы для работы.</p>
+                    </div>
+                    <div class="program-line">
+                        <div class="program-line__content">
+                            <h3 class="program-line__title">Неделя №3</h3>
+                            <p class="program-line__descr">
+                                Красивая часть курса,
+                                которая помогает в успехе
+                            </p>
                         </div>
-                        <div class="process_item">
-                            <h3 class="process_work">Выдача</h3>
-                            <p class="process_text">Отдаём компьютер вам в назначенный срок, проводим вместе
-                                тестирование, подписываем документы о выполнении работы и гарантии.</p>
+                        <div class="program-line__content">
+                            <h3 class="program-line__title">Неделя №4</h3>
+                            <p class="program-line__descr">
+                                Красивая часть курса,
+                                которая помогает в успехе
+                            </p>
+                        </div>
+                    </div>
+                    <div class="program-line">
+                        <div class="program-line__content">
+                            <h3 class="program-line__title">Неделя №5</h3>
+                            <p class="program-line__descr">
+                                Красивая часть курса,
+                                которая помогает в успехе
+                            </p>
+                        </div>
+                        <div class="program-line__content">
+                            <h3 class="program-line__title">Неделя №6</h3>
+                            <p class="program-line__descr">
+                                Красивая часть курса,
+                                которая помогает в успехе
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -114,36 +206,36 @@
 
         <section class="command">
             <div class="container">
-                <div class="process_title command title">
-                    <div class="process_img">
-                        <img src="img/command1.svg" alt="command1">
+                <div class="process__title command__title">
+                    <div class="process__img command__img-title">
+                        <img src="img/comand.svg" alt="">
                     </div>
-                    <h2 class="process_header command_header">Наша команда</h2>
+                    <h2 class="process__header">Наша команда</h2>
                 </div>
-                <div class="command_wrap">
-                    <div class="command_item">
-                        <div class="command_img">
-                            <img src="img/command_img1.png" alt="command_img1">
+                <div class="command__wrap">
+                    <div class="command__item block-center-horis">
+                        <div class="command__img">
+                            <img src="img/com-1.png" alt="">
                         </div>
-                        <h3 class="command_name">Евгений Петров</h3>
-                        <p class="command_proff">Специалист по видеокартам</p>
-                        <a href="#" class="button command_link">Биография</a>
+                        <h3 class="command__name">Евгений Петров</h3>
+                        <div class="command__profession">Специалист по видеокартам</div>
+                        <button class="button command__button">Биография</button>
                     </div>
-                    <div class="command_item">
-                        <div class="command_img">
-                            <img src="img/command_img2.png" alt="command_img2">
+                    <div class="command__item block-center-horis">
+                        <div class="command__img">
+                            <img src="img/com-2.png" alt="">
                         </div>
-                        <h3 class="command_name">Алексей Козлов</h3>
-                        <p class="command_proff">Специалист по монитору</p>
-                        <a href="#" class="button command_link">Биография</a>
+                        <h3 class="command__name">Алексей Козлов</h3>
+                        <div class="command__profession">Специалист по видеокартам</div>
+                        <button class="button command__button">Биография</button>
                     </div>
-                    <div class="command_item">
-                        <div class="command_img">
-                            <img src="img/command_img3.png" alt="command_img3">
+                    <div class="command__item block-center-horis">
+                        <div class="command__img">
+                            <img src="img/com-3.png" alt="">
                         </div>
-                        <h3 class="command_name">Дмитрий Иванов</h3>
-                        <p class="command_proff">Специалист по блок-схеме</p>
-                        <a href="#" class="button command_link">Биография</a>
+                        <h3 class="command__name">Дмитрий Иванов</h3>
+                        <div class="command__profession">Специалист по видеокартам</div>
+                        <button class="button command__button">Биография</button>
                     </div>
                 </div>
             </div>
@@ -151,51 +243,47 @@
 
         <section class="assembly">
             <div class="container">
-                <div class="assembly_wrap">
-                    <h2 class="assembly_header">Закажите свою уникальную сборку</h2>
-                    <p class="assembly_description">Мы свяжемся с вами, чтобы уточнить детали заказа</p>
-                    <button class="button assembly_button modal_button">Оставить заявку</button>
-                    <div class="assembly_social">
-                        <div class="assembly_item">
-                            <img src="img/vk.svg" alt="vk">
+                <div class="assembly__wrap block-center-horis">
+                    <h2 class="assembly__header">Закажите свою уникальную сборку</h2>
+                    <div class="assembly__description">Мы свяжемся с вами, чтобы уточнить детали заказа</div>
+                    <button class="button assembly__button  modal__button">Оставить заявку</button>
+                    <div class="assembly__socials">
+                        <div class="assembly__item block-center">
+                            <img src="img/vk.svg" alt="">
                         </div>
-                        <div class="assembly_item">
-                            <img src="img/youtube.svg" alt="youtube">
+                        <div class="assembly__item block-center">
+                            <img src="img/ytb.svg" alt="">
                         </div>
-                        <div class="assembly_item">
-                            <img src="img/facebook.svg" alt="facebook">
+                        <div class="assembly__item block-center">
+                            <img src="img/fb.svg" alt="">
                         </div>
-                        <div class="assembly_item">
-                            <img src="img/instagram.svg" alt="instagram">
+                        <div class="assembly__item block-center">
+                            <img src="img/inst.svg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <form action="#" class="modal">
-            <div class="modal_inner">
-                <div class="modal_close">
-                    <img src="img/cross.svg" alt="cross">
-                </div>
-                <h3 class="modal_header">Заявка на сборку ПК</h3>
-                <p class="modal_subheader">Мы свяжемся с вами, чтобы обсудить детали заказа</p>
-                <div class="modal_elements">
-                    <div class="modal_item">
-                        <input type="text" class="modal_input" placeholder="Как вас зовут">
-                    </div>
-                    <div class="modal_item">
-                        <input type="tel" class="modal_input" placeholder="Номер телефона">
-                    </div>
-                    <div class="modal_item">
-                        <input type="email" class="modal_input" placeholder="E-mail">
-                    </div>
-                </div>
-                <button class="button main-display_button">Отправить</button>
-            </div>
-        </form>
     </main>
+
+    <form action="#" class="modal block-center">
+        <div class="modal__inner">
+            <div class="modal__header">Заявка на сборку ПК</div>
+            <div class="modal__subheader">Мы свяжемся с вами, чтобы обсудить детали заказа</div>
+            <div class="modal__elements block-center-horis">
+                <div class="modal__input">
+                    <input type="text" class="modal__input">
+                </div>
+                <div class="modal__input">
+                    <input type="tel" class="modal__input">
+                </div>
+                <div class="modal__input">
+                    <input type="email" class="modal__input">
+                </div>
+                <button type="button" class="button modal__button">Отправить</button>
+            </div>
+        </div>
+    </form>
 </body>
 
 </html>
-

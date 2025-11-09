@@ -1,25 +1,13 @@
-const modalWindow = document.querySelector('.modal')
-const modalClose = document.querySelector('.modal_close')
-const modalButton = document.querySelectorAll('.modal_button')
-const body = document.querySelector('body') 
+const contents = document.querySelectorAll('.program-line__content')
+const alldesc = document.querySelectorAll('.program-line__descr')
 
-modalButton.forEach((item) => {
-    item.addEventListener('click', () => {
-        modalWindow.style.display = 'flex';
-        body.classList.add('noscroll')
+contents.forEach((elem) => {
+    const title = elem.querySelector('.program-line__title')
+    const decs = elem.querySelector('.program-line__descr')
+
+    title.addEventListener('click', () => {
+        alldesc.forEach(item => item.classList.remove('active'))
+
+        decs.classList.add('active')
     })
-})
-
-modalWindow.addEventListener('click', (e) => {
-    const isModal = e.target.closest('.modal_inner')
-
-    if (!isModal) {
-        modalWindow.style.display = 'none'
-        body.classList.remove('noscroll')
-    } 
-})
-
-modalClose.addEventListener('click', () => {
-    modalWindow.style.display = 'none'
-    body.classList.remove('noscroll')
 })

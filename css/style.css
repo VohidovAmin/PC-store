@@ -567,10 +567,26 @@ progress::-moz-progress-value {
 }
 
 .modal__inner {
+    position: relative;
     width: 66.3rem;
     padding: 9rem 9.5rem;
     background: #2C2C2C;
     text-align: center;
+}
+
+.modal__close-js {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.modal__close-js:hover {
+    transform: scale(1.2);
+    opacity: 0.6;
 }
 
 .modal__header {
